@@ -9,7 +9,7 @@
 
 template <typename T>
 class TreeList {
-    private: class Node;    //forward declaration
+    private: class Node;  
     public: class iterator; 
     private: Node* root;    //head of TreeList
 
