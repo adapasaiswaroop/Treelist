@@ -64,7 +64,7 @@ class TreeList {
 
     public: void erase (std:: size_t index)
     {
-        if (index >= size())    throw std::out_of_range("Index is out of bounds");
+        if (index >= size())    throw std::out_of_range("Index - out of bound");
         Node* delNode = NULL;
         root = root->removeAt(index, &delNode);
         delete delNode;
