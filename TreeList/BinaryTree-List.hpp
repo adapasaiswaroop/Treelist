@@ -57,8 +57,8 @@ class TreeList {
 
     public: void insert (std::size_t index, const T &val)
     {
-        if (index > size())     throw std::out_of_range("Index is out of bounds");
-        if (size() == SIZE_MAX) throw std::length_error("Maximum size for TreeList reached");
+        if (index > size())     throw std::out_of_range("Index - out of bounds");
+        if (size() == SIZE_MAX) throw std::length_error("Maximum size - TreeList reached");
         root = root->insertAt(index, val);
     }
 
